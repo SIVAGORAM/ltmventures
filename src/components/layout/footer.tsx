@@ -1,4 +1,3 @@
-import Link from "next/link"
 import { ChevronRight } from "lucide-react"
 
 const navLinks = [
@@ -30,16 +29,17 @@ export function Footer() {
           <div className="md:col-span-5 flex flex-col items-start">
             
             {/* LTM Logo wrapped in crisp white container badge */}
-            <Link 
+            <a 
               href="#hero" 
-              className="inline-block bg-white rounded-xl px-3 py-2 shadow-md border border-white/20 mb-3 sm:mb-4 group hover:scale-[1.02] transition-transform"
+              className="inline-block bg-white rounded-xl px-3 py-2 shadow-md border border-white/20 mb-3 sm:mb-4 group hover:scale-[1.02] transition-transform cursor-pointer"
+              aria-label="LTM Ventures Home"
             >
               <img 
                 src="/logo.svg" 
                 alt="LTM Ventures India LLP" 
                 className="h-8 sm:h-9 md:h-10 w-auto object-contain" 
               />
-            </Link>
+            </a>
 
             <p className="text-[#94A3B8] text-xs sm:text-sm leading-relaxed max-w-sm mb-3 sm:mb-4">
               LTM Ventures India LLP is the parent company of WealthyStep, dedicated to providing innovative financial and insurance solutions.

@@ -29,7 +29,7 @@ export function AboutSection() {
               className="bg-white border border-slate-200 hover:border-[#E67710] rounded-xl px-4 py-2.5 shadow-sm flex items-center gap-3 transition-colors group"
             >
               <img src="/wealthysteplogo.svg" alt="WealthyStep" className="h-6 sm:h-7 w-auto object-contain" />
-              <span className="text-xs text-[#64748B] border-l border-slate-200 pl-3 group-hover:text-[#102448]">Financial Planning & Wealth Management</span>
+              <span className="text-xs text-[#64748B] border-l border-slate-200 pl-3 group-hover:text-[#102448]">Financial Solutions & Wealth Management</span>
             </a>
           </div>
 
@@ -56,7 +56,7 @@ export function VisionMissionSection() {
           <div className="w-10 h-[3px] bg-[#E67710] rounded-full mb-4"></div>
 
           <p className="text-sm sm:text-base md:text-lg text-[#475569] leading-relaxed">
-            We strive to empower individuals with financial knowledge and security, ensuring a legacy of mindful planning and trustworthy insurance solutions.
+            We strive to empower individuals with financial knowledge and security, ensuring a legacy of mindful solutions and trustworthy insurance protection.
           </p>
 
         </div>
@@ -68,13 +68,13 @@ export function VisionMissionSection() {
 const services = [
   {
     icon: Compass,
-    title: "Financial Planning Solutions",
-    description: "Secure your legacy with tailored financial strategies and insurance advisory for every need."
+    title: "Financial Solutions",
+    description: "Secure your legacy with tailored financial strategies and insurance solutions for every need."
   },
   {
     icon: TrendingUp,
-    title: "Advisory for Investments",
-    description: "Navigate your financial journey with expert guidance and personalized planning for success."
+    title: "Investment Solutions",
+    description: "Navigate your financial journey with expert guidance and personalized strategies for success."
   },
   {
     icon: Shield,
@@ -98,10 +98,10 @@ export function ServicesSection() {
             SOLUTIONS
           </span>
           <h2 className="font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-[#102448] mb-2">
-            Financial & Insurance Advisory
+            Financial & Insurance Solutions
           </h2>
           <p className="text-xs sm:text-sm md:text-base text-[#64748B]">
-            Empowering individuals through structured planning and trustworthy advisory.
+            Empowering individuals through structured guidance and trustworthy solutions.
           </p>
         </div>
 

@@ -1,7 +1,6 @@
 "use client"
 
 import * as React from "react"
-import Link from "next/link"
 import { cn } from "@/lib/utils"
 import { MobileMenu } from "./mobile-menu"
 import { ChevronDown } from "lucide-react"
@@ -36,9 +35,9 @@ export function Header() {
           )}
         >
           {/* Left: Brand Logo */}
-          <Link 
+          <a 
             href="#hero" 
-            className="flex items-center group shrink-0"
+            className="flex items-center group shrink-0 cursor-pointer"
             aria-label="LTM Ventures Home"
           >
             <img 
@@ -46,7 +45,7 @@ export function Header() {
               alt="LTM Ventures India LLP" 
               className="h-7 sm:h-8 md:h-8.5 w-auto transition-transform group-hover:scale-[1.02] object-contain" 
             />
-          </Link>
+          </a>
 
           {/* Right: Desktop Navigation Links */}
           <nav className="hidden lg:flex items-center gap-6 xl:gap-8">

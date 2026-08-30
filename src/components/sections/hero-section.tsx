@@ -21,7 +21,7 @@ export function HeroSection() {
 
         {/* Hero Subtitle */}
         <p className="text-sm sm:text-base md:text-lg text-[#64748B] leading-relaxed max-w-2xl mb-6 sm:mb-7">
-          Discover <strong className="text-[#102448]">WealthyStep</strong> for mindful financial planning and insurance solutions.
+          Discover <strong className="text-[#102448]">WealthyStep</strong> for mindful financial solutions and insurance solutions.
         </p>
 
         {/* Action Button */}
