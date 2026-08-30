@@ -30,7 +30,7 @@ export function MobileMenu() {
           <SheetTitle className="flex items-center justify-between">
             <div className="bg-white rounded-xl px-3 py-1.5 shadow-md border border-white/20 inline-block">
               <img 
-                src="/ltmlogo2.svg" 
+                src="/logo.svg" 
                 alt="LTM Ventures India LLP" 
                 className="h-7 w-auto object-contain" 
               />

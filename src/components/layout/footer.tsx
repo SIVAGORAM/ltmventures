@@ -35,7 +35,7 @@ export function Footer() {
               className="inline-block bg-white rounded-xl px-3 py-2 shadow-md border border-white/20 mb-3 sm:mb-4 group hover:scale-[1.02] transition-transform"
             >
               <img 
-                src="/ltmlogo2.svg" 
+                src="/logo.svg" 
                 alt="LTM Ventures India LLP" 
                 className="h-8 sm:h-9 md:h-10 w-auto object-contain" 
               />

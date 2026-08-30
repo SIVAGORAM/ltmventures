@@ -7,8 +7,8 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "LTM Ventures India LLP",
-  "url": "https://ltmventures.com",
-  "logo": "https://ltmventures.com/ltmlogo2.svg",
+  "url": "https://ltmventuresindia.com",
+  "logo": "https://ltmventuresindia.com/logo.svg",
   "subOrganization": [
     {
       "@type": "Organization",

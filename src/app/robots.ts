@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/api/",
     },
-    sitemap: "https://ltmventures.in/sitemap.xml",
+    sitemap: "https://ltmventuresindia.com/sitemap.xml",
   }
 }

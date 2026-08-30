@@ -14,8 +14,17 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "LTM Ventures India LLP | Financial Ecosystem",
-  description: "LTM Ventures India LLP creates meaningful financial experiences through specialized solutions for wealth creation and financial protection.",
+  metadataBase: new URL("https://ltmventuresindia.com"),
+  title: "LTM Ventures India LLP | Parent Company of WealthyStep",
+  description: "LTM Ventures India LLP is the parent company of WealthyStep, dedicated to providing innovative financial and wealth management solutions.",
+  openGraph: {
+    title: "LTM Ventures India LLP | Parent Company of WealthyStep",
+    description: "LTM Ventures India LLP is the parent company of WealthyStep, dedicated to providing innovative financial and wealth management solutions.",
+    url: "https://ltmventuresindia.com",
+    siteName: "LTM Ventures India LLP",
+    locale: "en_IN",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
