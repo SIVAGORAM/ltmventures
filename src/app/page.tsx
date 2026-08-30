@@ -1,10 +1,7 @@
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import { HeroSection } from "@/components/sections/hero-section"
-import { BrandsSection } from "@/components/sections/brands-section"
-import { AboutPreviewSection } from "@/components/sections/about-preview-section"
-import { WhyLtmPreviewSection } from "@/components/sections/why-ltm-preview-section"
-import { VisionPreviewSection } from "@/components/sections/vision-preview-section"
+import { AboutSection, VisionMissionSection, ServicesSection } from "@/components/sections/home-sections"
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -31,10 +28,9 @@ export default function Home() {
       <Header />
       <main className="flex-1 flex flex-col w-full overflow-hidden bg-white">
         <HeroSection />
-        <BrandsSection />
-        <AboutPreviewSection />
-        <WhyLtmPreviewSection />
-        <VisionPreviewSection />
+        <AboutSection />
+        <VisionMissionSection />
+        <ServicesSection />
       </main>
       <Footer />
     </>

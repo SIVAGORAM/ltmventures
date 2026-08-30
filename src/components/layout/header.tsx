@@ -2,21 +2,18 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
 import { MobileMenu } from "./mobile-menu"
-import { ChevronDown, ArrowRight } from "lucide-react"
+import { ChevronDown } from "lucide-react"
 
 const navItems = [
-  { name: "Home", href: "/", hasDropdown: false },
-  { name: "About Us", href: "/about", hasDropdown: true },
-  { name: "Our Brand", href: "/brand", hasDropdown: true },
-  { name: "Vision & Mission", href: "/vision-mission", hasDropdown: false },
-  { name: "Why LTM Ventures", href: "/why-ltm", hasDropdown: false },
+  { name: "Home", href: "#hero", hasDropdown: false },
+  { name: "About Us", href: "#about", hasDropdown: true },
+  { name: "Vision & Mission", href: "#vision", hasDropdown: false },
+  { name: "Services", href: "#services", hasDropdown: true },
 ]
 
 export function Header() {
-  const pathname = usePathname()
   const [isScrolled, setIsScrolled] = React.useState(false)
 
   React.useEffect(() => {
@@ -40,7 +37,7 @@ export function Header() {
         >
           {/* Left: Brand Logo */}
           <Link 
-            href="/" 
+            href="#hero" 
             className="flex items-center group shrink-0"
             aria-label="LTM Ventures Home"
           >
@@ -51,50 +48,21 @@ export function Header() {
             />
           </Link>
 
-          {/* Center: Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center gap-5 xl:gap-8 mx-auto">
-            {navItems.map((item) => {
-              const isActive = pathname === item.href || (item.href === "/" && pathname === "/")
-              return (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className={cn(
-                    "text-[13px] xl:text-[14px] font-semibold transition-colors relative py-1 flex flex-col items-center group whitespace-nowrap",
-                    isActive ? "text-[#E67710]" : "text-[#102448] hover:text-[#E67710]"
-                  )}
-                >
-                  <div className="flex items-center gap-1">
-                    <span>{item.name}</span>
-                    {item.hasDropdown && (
-                      <ChevronDown className="w-3.5 h-3.5 opacity-60 group-hover:opacity-100 transition-opacity" />
-                    )}
-                  </div>
-                  {isActive && (
-                    <span className="w-5 h-[3px] bg-[#E67710] rounded-full mt-1" />
-                  )}
-                </Link>
-              )
-            })}
+          {/* Center: Desktop Navigation Links (Restored Old Navbar Style) */}
+          <nav className="hidden lg:flex items-center gap-6 xl:gap-8 mx-auto">
+            {navItems.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-[13px] xl:text-[14px] font-semibold text-[#102448] hover:text-[#E67710] transition-colors relative py-1 flex items-center gap-1 group whitespace-nowrap"
+              >
+                <span>{item.name}</span>
+                {item.hasDropdown && (
+                  <ChevronDown className="w-3.5 h-3.5 opacity-60 group-hover:opacity-100 transition-opacity" />
+                )}
+              </a>
+            ))}
           </nav>
-
-          {/* Right: WealthyStep Flagship Brand External Link (Desktop) */}
-          <div className="hidden lg:flex items-center shrink-0">
-            <a
-              href="https://www.wealthystep.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#FFF7ED] hover:bg-[#FFEDD5] border border-[#FED7AA] rounded-xl px-4 py-2 transition-all duration-300 group shadow-sm"
-              title="Visit WealthyStep official website"
-            >
-              <img 
-                src="/wealthysteplogo.svg" 
-                alt="WealthyStep" 
-                className="h-5 w-auto object-contain" 
-              />
-              <ArrowRight className="w-3.5 h-3.5 text-[#E67710] transition-transform group-hover:translate-x-1" />
-            </a>
-          </div>
 
           {/* Mobile Menu Trigger (< 1024px) */}
           <div className="lg:hidden shrink-0">

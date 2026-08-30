@@ -1,10 +1,7 @@
 "use client"
 
 import * as React from "react"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-import { Menu, ChevronRight, ArrowRight } from "lucide-react"
-import { cn } from "@/lib/utils"
+import { Menu, ChevronRight } from "lucide-react"
 import { navigation } from "@/config/navigation"
 import {
   Sheet,
@@ -16,18 +13,17 @@ import {
 
 export function MobileMenu() {
   const [open, setOpen] = React.useState(false)
-  const pathname = usePathname()
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
-      <SheetTrigger className="lg:hidden w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#FFF7ED] hover:bg-[#E67710] border border-[#FED7AA] flex items-center justify-center text-[#E67710] hover:text-white transition-colors duration-300 shadow-sm cursor-pointer">
+      <SheetTrigger className="md:hidden w-9 h-9 rounded-xl bg-slate-100 hover:bg-slate-200 border border-slate-300 flex items-center justify-center text-[#102448] transition-colors duration-200 shadow-sm cursor-pointer">
         <Menu className="h-5 w-5" />
         <span className="sr-only">Toggle Mobile Menu</span>
       </SheetTrigger>
 
       <SheetContent 
         side="right" 
-        className="w-[300px] xs:w-[320px] sm:w-[360px] flex flex-col bg-[#071427] text-white border-l border-[#1A3866] p-6 shadow-2xl select-none"
+        className="w-[280px] sm:w-[320px] flex flex-col bg-[#071427] text-white border-l border-[#1A3866] p-6 shadow-2xl select-none"
       >
         {/* Drawer Header */}
         <SheetHeader className="text-left border-b border-[#122747] pb-5 mb-2">
@@ -36,7 +32,7 @@ export function MobileMenu() {
               <img 
                 src="/ltmlogo2.svg" 
                 alt="LTM Ventures India LLP" 
-                className="h-8 w-auto object-contain" 
+                className="h-7 w-auto object-contain" 
               />
             </div>
           </SheetTitle>
@@ -44,65 +40,24 @@ export function MobileMenu() {
         
         {/* Drawer Navigation Links */}
         <nav className="flex flex-col gap-2 mt-4 flex-1">
-          {navigation.map((item) => {
-            const isActive = pathname === item.href || (item.href === "/" && pathname === "/")
-            return (
-              <Link
-                key={item.name}
-                href={item.href}
-                onClick={() => setOpen(false)}
-                className={cn(
-                  "flex items-center justify-between px-4 py-3 rounded-xl font-semibold text-sm transition-all duration-200 group",
-                  isActive 
-                    ? "bg-[#E67710]/20 text-[#E67710] border border-[#E67710]/40 font-bold" 
-                    : "text-slate-200 hover:text-white hover:bg-[#0D2446]"
-                )}
-              >
-                <div className="flex items-center gap-3">
-                  <div 
-                    className={cn(
-                      "w-2 h-2 rounded-full transition-colors",
-                      isActive ? "bg-[#E67710] shadow-[0_0_8px_#E67710]" : "bg-slate-600 group-hover:bg-[#E67710]"
-                    )}
-                  />
-                  <span>{item.name}</span>
-                </div>
-                <ChevronRight 
-                  className={cn(
-                    "w-4 h-4 transition-transform group-hover:translate-x-1",
-                    isActive ? "text-[#E67710]" : "text-slate-500 group-hover:text-slate-300"
-                  )} 
-                />
-              </Link>
-            )
-          })}
+          {navigation.map((item) => (
+            <a
+              key={item.name}
+              href={item.href}
+              onClick={() => setOpen(false)}
+              className="flex items-center justify-between px-4 py-3 rounded-xl font-semibold text-sm text-slate-200 hover:text-white hover:bg-[#0D2446] transition-all group"
+            >
+              <span>{item.name}</span>
+              <ChevronRight className="w-4 h-4 text-slate-500 group-hover:text-slate-300 transition-transform group-hover:translate-x-1" />
+            </a>
+          ))}
         </nav>
 
-        {/* Drawer Bottom Feature CTA Card */}
-        <div className="mt-auto pt-4 border-t border-[#122747] flex flex-col gap-2.5">
-          <div className="text-[10px] font-bold uppercase tracking-widest text-[#94A3B8] text-center">
-            OUR FLAGSHIP BRAND
-          </div>
-          
-          <a
-            href="https://www.wealthystep.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => setOpen(false)}
-            className="w-full bg-gradient-to-r from-[#E67710] to-[#C25E00] hover:from-[#D96B00] hover:to-[#A85100] text-white font-semibold rounded-2xl p-3.5 flex flex-col items-center justify-center gap-2 shadow-lg shadow-[#E67710]/25 transition-all group border border-[#FDBA74]/30 cursor-pointer"
-          >
-            <div className="bg-white rounded-xl px-3 py-1.5 shadow-md flex items-center justify-center">
-              <img 
-                src="/wealthysteplogo.svg" 
-                alt="WealthyStep" 
-                className="h-6 w-auto object-contain" 
-              />
-            </div>
-            <div className="flex items-center gap-1.5 text-xs font-bold text-white tracking-wide">
-              <span>Explore WealthyStep</span>
-              <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
-            </div>
-          </a>
+        {/* Drawer Bottom Parent Company Note */}
+        <div className="mt-auto pt-4 border-t border-[#122747] text-center">
+          <p className="text-[11px] text-[#94A3B8] leading-relaxed">
+            LTM Ventures India LLP — Parent Company of WealthyStep.
+          </p>
         </div>
 
       </SheetContent>

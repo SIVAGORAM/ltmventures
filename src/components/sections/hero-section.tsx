@@ -1,94 +1,39 @@
-import Link from "next/link"
-import Image from "next/image"
-import { AnimatedSection } from "@/components/common/animated-section"
-import { ArrowRight } from "lucide-react"
+import { Users, ArrowRight } from "lucide-react"
 
 export function HeroSection() {
   return (
-    <section className="relative w-full bg-white pt-22 sm:pt-24 md:pt-26 lg:pt-28 pb-1 sm:pb-3 md:pb-4 overflow-hidden select-none">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-8 w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-4 items-center">
+    <section id="hero" className="relative w-full bg-white pt-24 sm:pt-28 md:pt-30 pb-8 sm:pb-10 md:pb-12 overflow-hidden select-none border-b border-[#E9EDF2]">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8 text-center relative z-10 flex flex-col items-center">
         
-        {/* ── Left Content Column (5 cols on lg) ── */}
-        <AnimatedSection className="flex flex-col items-start gap-3 sm:gap-4 lg:col-span-5 relative z-20">
-          <div className="flex items-center gap-2.5 sm:gap-3">
-            <span className="text-[11px] sm:text-[12px] md:text-[13px] font-bold uppercase tracking-widest text-[#E67710]">
-              LTM VENTURES INDIA LLP
-            </span>
-            <div className="h-[2px] w-8 sm:w-10 bg-[#E67710]"></div>
-          </div>
-          
-          <h1 className="font-heading font-bold text-[32px] sm:text-[42px] md:text-[50px] lg:text-[54px] xl:text-[58px] leading-[1.08] text-[#102448]">
-            Building Meaningful<br />
-            <span className="text-[#E67710]">Financial</span><br />
-            Experiences<span className="text-[#E67710]">.</span>
-          </h1>
-          
-          <p className="text-xs sm:text-sm md:text-base text-[#64748B] leading-relaxed max-w-[440px]">
-            LTM Ventures India LLP is focused on building innovative financial solutions and empowering individuals to make confident decisions for a stronger financial future.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-3.5 mt-1 w-full sm:w-auto">
-            <a 
-              href="https://www.wealthystep.com/" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto bg-[#E67710] hover:bg-[#D96B00] text-white rounded-lg px-5 sm:px-6 py-3 sm:py-3.5 text-xs sm:text-sm md:text-[15px] font-semibold inline-flex items-center justify-center gap-2 shadow-sm transition-all hover:shadow-md group"
-            >
-              Explore WealthyStep <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-            </a>
-            <Link 
-              href="/about" 
-              className="w-full sm:w-auto bg-white hover:bg-slate-50 text-[#102448] border border-[#CBD5E1] rounded-lg px-5 sm:px-6 py-3 sm:py-3.5 text-xs sm:text-sm md:text-[15px] font-semibold inline-flex items-center justify-center transition-colors"
-            >
-              Learn About Us
-            </Link>
-          </div>
+        {/* Trust Pill Badge */}
+        <div className="inline-flex items-center gap-2 bg-[#F8FAFC] border border-slate-200 rounded-full px-4 py-1.5 mb-4 sm:mb-5 shadow-sm">
+          <Users className="w-4 h-4 text-[#102448]" />
+          <span className="text-xs font-semibold text-[#102448] tracking-wide">
+            Trusted by thousands of clients
+          </span>
+        </div>
 
-          {/* Mobile Quote Card — Shown cleanly on mobile/tablet (< 1024px) below buttons */}
-          <div className="lg:hidden w-full bg-white/95 backdrop-blur-md rounded-xl p-3.5 shadow-sm border border-[#E9EDF2] mt-1 select-none">
-            <div className="flex items-start gap-3">
-              <div className="text-[#E67710] font-serif text-2xl font-black leading-none shrink-0">"</div>
-              <div className="flex flex-col">
-                <p className="font-heading font-bold text-xs sm:text-sm text-[#102448] leading-snug">
-                  We build financial solutions for a better tomorrow.
-                </p>
-                <div className="w-5 h-[2px] bg-[#E67710] my-1"></div>
-                <div className="text-[10px] font-medium text-[#64748B]">
-                  LTM Ventures India LLP
-                </div>
-              </div>
-            </div>
-          </div>
-        </AnimatedSection>
-        
-        {/* ── Right Integrated Column (7 cols on lg): 3D Chart Graphic ── */}
-        <AnimatedSection className="lg:col-span-7 relative w-full h-[180px] xs:h-[220px] sm:h-[300px] md:h-[380px] lg:h-[460px]">
-          
-          {/* Master 3D Chart Graphic */}
-          <div className="relative w-full h-full lg:-left-12 xl:-left-20 select-none pointer-events-none">
-            <Image 
-              src="/hero_3d_chart.png"
-              alt="LTM Ventures Financial Growth"
-              fill
-              priority
-              draggable={false}
-              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 800px"
-              className="object-contain object-bottom lg:object-left-bottom select-none pointer-events-none"
-            />
-          </div>
+        {/* Hero Headline */}
+        <h1 className="font-heading font-bold text-3xl sm:text-5xl md:text-6xl text-[#102448] leading-[1.12] max-w-4xl mb-4 sm:mb-5">
+          Empowering Your Financial<br />
+          <span className="text-[#102448] underline decoration-[#E67710] decoration-4 underline-offset-8">Future Today</span>.
+        </h1>
 
-          {/* Desktop Floating Quote Card — Shown only on desktop (≥ 1024px) */}
-          <div className="hidden lg:block absolute right-2 xl:right-4 top-[8%] bg-white/95 backdrop-blur-md rounded-2xl p-5 xl:p-6 shadow-2xl z-30 w-[210px] xl:w-[230px] border border-[#E9EDF2] animate-float-card select-none">
-            <div className="text-[#E67710] font-serif text-2xl xl:text-3xl font-black leading-none mb-2">"</div>
-            <p className="font-heading font-bold text-xs xl:text-sm text-[#102448] leading-snug mb-3">
-              We build financial solutions for a better tomorrow.
-            </p>
-            <div className="w-6 h-[2px] bg-[#E67710] mb-2"></div>
-            <div className="text-[10px] xl:text-[11px] font-medium text-[#64748B]">
-              LTM Ventures India LLP
-            </div>
-          </div>
-        </AnimatedSection>
+        {/* Hero Subtitle */}
+        <p className="text-sm sm:text-base md:text-lg text-[#64748B] leading-relaxed max-w-2xl mb-6 sm:mb-7">
+          Discover <strong className="text-[#102448]">WealthyStep</strong> for mindful financial planning and insurance solutions.
+        </p>
+
+        {/* Action Button */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a 
+            href="#about" 
+            className="bg-[#102448] hover:bg-[#18315C] text-white font-semibold text-xs sm:text-sm md:text-base rounded-xl px-7 py-3 shadow-md transition-all inline-flex items-center gap-2"
+          >
+            <span>Learn About LTM Ventures</span>
+            <ArrowRight className="w-4 h-4" />
+          </a>
+        </div>
 
       </div>
     </section>
