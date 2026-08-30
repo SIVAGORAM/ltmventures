@@ -1,26 +1,193 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-poppins);
+  
+  --color-primary-navy: var(--primary-navy);
+  --color-secondary-indigo: var(--secondary-indigo);
+  --color-supporting-indigo: var(--supporting-indigo);
+  --color-purple-accent: var(--purple-accent);
+  --color-lime-accent: var(--lime-accent);
+  --color-cta-green: var(--cta-green);
+  --color-off-white: var(--off-white);
+  --color-light-surface: var(--light-surface);
+  
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+:root {
+  /* LTM Ventures Brand Colors */
+  --primary-navy: #102448;
+  --secondary-navy: #18315C;
+  --primary-green: #4F8A10;
+  --light-green: #78A817;
+  --accent-orange: #FF8500;
+  --light-background: #F7F8FA;
+  --soft-gray: #E9EDF2;
+  
+  /* Retaining old names for compatibility, but updating values */
+  --secondary-indigo: #18315C;
+  --supporting-indigo: #102448;
+  --purple-accent: #18315C;
+  --lime-accent: #78A817;
+  --cta-green: #4F8A10;
+  --off-white: #F7F8FA;
+  --light-surface: #E9EDF2;
+
+  /* Standard map to shadcn semantic colors */
+  --background: #FFFFFF;
+  --foreground: #1E293B; /* Primary Text */
+  
+  --card: #FFFFFF;
+  --card-foreground: #1E293B;
+  
+  --popover: #FFFFFF;
+  --popover-foreground: #1E293B;
+  
+  --primary: #102448; /* Deep Navy */
+  --primary-foreground: #FFFFFF;
+  
+  --secondary: #E9EDF2; /* Soft Gray */
+  --secondary-foreground: #102448;
+  
+  --muted: #F7F8FA; /* Light Background */
+  --muted-foreground: #64748B; /* Secondary Text */
+  
+  --accent: #E9EDF2;
+  --accent-foreground: #102448;
+  
+  --destructive: #ff3333;
+  --destructive-foreground: #FFFFFF;
+  
+  --border: #E9EDF2;
+  --input: #E9EDF2;
+  --ring: #4F8A10; /* Primary Green */
+  
+  --radius: 1rem; /* 16px */
+  
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #25242B;
+  --sidebar-primary: #180D45;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #F2F4F8;
+  --sidebar-accent-foreground: #180D45;
+  --sidebar-border: #E6E4EA;
+  --sidebar-ring: #84BD3C;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes floatBadge1 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(2deg);
+  }
+}
+
+@keyframes floatBadge2 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-2deg);
+  }
+}
+
+@keyframes floatBadge3 {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+}
+
+.animate-float-card {
+  animation: floatSlow 5s ease-in-out infinite;
+}
+
+.animate-float-b1 {
+  animation: floatBadge1 4s ease-in-out infinite;
+}
+
+.animate-float-b2 {
+  animation: floatBadge2 4.5s ease-in-out infinite 0.5s;
+}
+
+.animate-float-b3 {
+  animation: floatBadge3 3.8s ease-in-out infinite 1s;
+}
+
+.animate-glow-pulse {
+  animation: glowPulse 3s ease-in-out infinite;
 }
