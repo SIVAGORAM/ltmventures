@@ -13,9 +13,9 @@
   --color-primary-navy: var(--primary-navy);
   --color-secondary-indigo: var(--secondary-indigo);
   --color-supporting-indigo: var(--supporting-indigo);
-  --color-purple-accent: var(--purple-accent);
-  --color-lime-accent: var(--lime-accent);
-  --color-cta-green: var(--cta-green);
+  --color-primary-orange: var(--primary-orange);
+  --color-light-orange: var(--light-orange);
+  --color-cta-orange: var(--cta-orange);
   --color-off-white: var(--off-white);
   --color-light-surface: var(--light-surface);
   
@@ -57,18 +57,19 @@
   /* LTM Ventures Brand Colors */
   --primary-navy: #102448;
   --secondary-navy: #18315C;
-  --primary-green: #4F8A10;
-  --light-green: #78A817;
-  --accent-orange: #FF8500;
+  --primary-orange: #E67710;
+  --light-orange: #F97316;
+  --accent-orange: #E67710;
   --light-background: #F7F8FA;
   --soft-gray: #E9EDF2;
   
-  /* Retaining old names for compatibility, but updating values */
+  /* Retaining old names for compatibility */
   --secondary-indigo: #18315C;
   --supporting-indigo: #102448;
   --purple-accent: #18315C;
-  --lime-accent: #78A817;
-  --cta-green: #4F8A10;
+  --lime-accent: #F97316;
+  --cta-orange: #E67710;
+  --cta-green: #E67710;
   --off-white: #F7F8FA;
   --light-surface: #E9EDF2;
 
@@ -99,7 +100,7 @@
   
   --border: #E9EDF2;
   --input: #E9EDF2;
-  --ring: #4F8A10; /* Primary Green */
+  --ring: #E67710; /* LTM Logo Orange */
   
   --radius: 1rem; /* 16px */
   
@@ -110,7 +111,7 @@
   --sidebar-accent: #F2F4F8;
   --sidebar-accent-foreground: #180D45;
   --sidebar-border: #E6E4EA;
-  --sidebar-ring: #84BD3C;
+  --sidebar-ring: #E67710;
 }
 
 @layer base {

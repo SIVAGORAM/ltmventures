@@ -20,7 +20,7 @@ export function MobileMenu() {
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
-      <SheetTrigger className="lg:hidden w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#F1F8EA] hover:bg-[#4F8A10] border border-[#D4E8C4] flex items-center justify-center text-[#4F8A10] hover:text-white transition-colors duration-300 shadow-sm cursor-pointer">
+      <SheetTrigger className="lg:hidden w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#FFF7ED] hover:bg-[#E67710] border border-[#FED7AA] flex items-center justify-center text-[#E67710] hover:text-white transition-colors duration-300 shadow-sm cursor-pointer">
         <Menu className="h-5 w-5" />
         <span className="sr-only">Toggle Mobile Menu</span>
       </SheetTrigger>
@@ -54,7 +54,7 @@ export function MobileMenu() {
                 className={cn(
                   "flex items-center justify-between px-4 py-3 rounded-xl font-semibold text-sm transition-all duration-200 group",
                   isActive 
-                    ? "bg-[#4F8A10]/20 text-[#4F8A10] border border-[#4F8A10]/40 font-bold" 
+                    ? "bg-[#E67710]/20 text-[#E67710] border border-[#E67710]/40 font-bold" 
                     : "text-slate-200 hover:text-white hover:bg-[#0D2446]"
                 )}
               >
@@ -62,7 +62,7 @@ export function MobileMenu() {
                   <div 
                     className={cn(
                       "w-2 h-2 rounded-full transition-colors",
-                      isActive ? "bg-[#4F8A10] shadow-[0_0_8px_#4F8A10]" : "bg-slate-600 group-hover:bg-[#4F8A10]"
+                      isActive ? "bg-[#E67710] shadow-[0_0_8px_#E67710]" : "bg-slate-600 group-hover:bg-[#E67710]"
                     )}
                   />
                   <span>{item.name}</span>
@@ -70,7 +70,7 @@ export function MobileMenu() {
                 <ChevronRight 
                   className={cn(
                     "w-4 h-4 transition-transform group-hover:translate-x-1",
-                    isActive ? "text-[#4F8A10]" : "text-slate-500 group-hover:text-slate-300"
+                    isActive ? "text-[#E67710]" : "text-slate-500 group-hover:text-slate-300"
                   )} 
                 />
               </Link>
@@ -89,7 +89,7 @@ export function MobileMenu() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}
-            className="w-full bg-gradient-to-r from-[#4F8A10] to-[#3B6A0C] hover:from-[#43770D] hover:to-[#31570A] text-white font-semibold rounded-2xl p-3.5 flex flex-col items-center justify-center gap-2 shadow-lg shadow-[#4F8A10]/25 transition-all group border border-[#5CA014]/30 cursor-pointer"
+            className="w-full bg-gradient-to-r from-[#E67710] to-[#C25E00] hover:from-[#D96B00] hover:to-[#A85100] text-white font-semibold rounded-2xl p-3.5 flex flex-col items-center justify-center gap-2 shadow-lg shadow-[#E67710]/25 transition-all group border border-[#FDBA74]/30 cursor-pointer"
           >
             <div className="bg-white rounded-xl px-3 py-1.5 shadow-md flex items-center justify-center">
               <img 

@@ -21,7 +21,7 @@ export function CoinGrowthIllustration() {
   return (
     <div className="relative w-full h-full flex items-center justify-center select-none overflow-visible">
       <div
-        className="absolute w-[220px] h-[220px] sm:w-[260px] sm:h-[260px] rounded-full bg-gradient-to-b from-[#F1F8EA] to-[#E4F0D9]"
+        className="absolute w-[220px] h-[220px] sm:w-[260px] sm:h-[260px] rounded-full bg-gradient-to-b from-[#FFF7ED] to-[#FFEDD5]"
         style={{ opacity: mounted ? 1 : 0, transform: mounted ? "scale(1)" : "scale(0.7)", transition: "all 0.8s ease" }}
       />
       <svg viewBox="0 0 260 240" className="relative w-full h-full max-w-[280px]" fill="none">
@@ -36,8 +36,8 @@ export function CoinGrowthIllustration() {
             <stop offset="100%" stopColor="#A87A12" />
           </linearGradient>
           <linearGradient id="leaf" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stopColor="#7CC24A" />
-            <stop offset="100%" stopColor="#4F8A10" />
+            <stop offset="0%" stopColor="#F97316" />
+            <stop offset="100%" stopColor="#E67710" />
           </linearGradient>
           <filter id="coinShadow">
             <feDropShadow dx="0" dy="4" stdDeviation="4" floodColor="#7A5A0A" floodOpacity="0.18" />
@@ -77,7 +77,7 @@ export function CoinGrowthIllustration() {
             transitionDelay: "0.75s",
           }}
         >
-          <path d="M196 108 C196 88, 196 70, 196 58" stroke="#4F8A10" strokeWidth="3" strokeLinecap="round" />
+          <path d="M196 108 C196 88, 196 70, 196 58" stroke="#E67710" strokeWidth="3" strokeLinecap="round" />
           <path d="M196 78 C182 74, 172 62, 174 48 C190 50, 200 60, 196 78 Z" fill="url(#leaf)" />
           <path d="M196 66 C210 60, 222 48, 220 34 C204 38, 194 48, 196 66 Z" fill="url(#leaf)" opacity="0.9" />
         </g>

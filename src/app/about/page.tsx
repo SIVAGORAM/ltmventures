@@ -22,17 +22,17 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-center">
               <AnimatedSection className="lg:col-span-5 flex flex-col items-start gap-4 py-2 sm:py-4">
                 <div className="flex items-center gap-2.5 sm:gap-3">
-                  <span className="text-[11px] sm:text-[12px] md:text-[13px] font-bold uppercase tracking-widest text-[#4F8A10]">
+                  <span className="text-[11px] sm:text-[12px] md:text-[13px] font-bold uppercase tracking-widest text-[#E67710]">
                     ABOUT LTM VENTURES
                   </span>
-                  <div className="h-[2px] w-8 sm:w-10 bg-[#4F8A10]"></div>
+                  <div className="h-[2px] w-8 sm:w-10 bg-[#E67710]"></div>
                 </div>
 
                 <h1 className="font-heading font-bold text-[32px] sm:text-[42px] md:text-[48px] lg:text-[52px] leading-[1.08] text-[#102448]">
-                  Creating a Stronger<br />Financial Future<span className="text-[#4F8A10]">.</span>
+                  Creating a Stronger<br />Financial Future<span className="text-[#E67710]">.</span>
                 </h1>
 
-                <div className="h-[3px] w-10 sm:w-12 bg-[#4F8A10] rounded-full my-0.5 sm:my-1"></div>
+                <div className="h-[3px] w-10 sm:w-12 bg-[#E67710] rounded-full my-0.5 sm:my-1"></div>
 
                 <p className="text-xs sm:text-sm md:text-base text-[#64748B] leading-relaxed max-w-[460px]">
                   LTM Ventures India LLP is focused on building meaningful financial experiences through innovation, technology, and customer-focused thinking.
@@ -40,7 +40,7 @@ export default function AboutPage() {
               </AnimatedSection>
               
               <AnimatedSection className="lg:col-span-7 relative w-full h-[220px] xs:h-[280px] sm:h-[340px] md:h-[400px] lg:h-[440px] select-none pointer-events-none">
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[85%] h-[85%] rounded-full bg-gradient-to-tr from-[#4F8A10]/10 via-[#102448]/5 to-transparent blur-3xl pointer-events-none" />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[85%] h-[85%] rounded-full bg-gradient-to-tr from-[#E67710]/10 via-[#102448]/5 to-transparent blur-3xl pointer-events-none" />
                 <Image 
                   src="/aboutus.png"
                   alt="About LTM Ventures Financial Growth"
@@ -82,9 +82,9 @@ export default function AboutPage() {
             </AnimatedSection>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-              <AnimatedSection className="bg-white border border-[#E9EDF2] border-b-4 border-b-[#4F8A10] p-6 sm:p-8 rounded-[2rem] shadow-sm text-center group hover:shadow-md transition-shadow">
-                <div className="w-13 h-13 rounded-full bg-[#F1F8EA] flex items-center justify-center mx-auto mb-5 group-hover:bg-[#4F8A10] transition-colors duration-300">
-                  <Lightbulb className="w-7 h-7 text-[#4F8A10] group-hover:text-white transition-colors duration-300" strokeWidth={1.75} />
+              <AnimatedSection className="bg-white border border-[#E9EDF2] border-b-4 border-b-[#E67710] p-6 sm:p-8 rounded-[2rem] shadow-sm text-center group hover:shadow-md transition-shadow">
+                <div className="w-13 h-13 rounded-full bg-[#FFF7ED] border border-[#FED7AA] flex items-center justify-center mx-auto mb-5 group-hover:bg-[#E67710] transition-colors duration-300">
+                  <Lightbulb className="w-7 h-7 text-[#E67710] group-hover:text-white transition-colors duration-300" strokeWidth={1.75} />
                 </div>
                 <h3 className="font-heading font-bold text-xl text-[#102448] mb-3">Innovation</h3>
                 <p className="text-[#64748B] text-xs sm:text-sm md:text-base leading-relaxed">
@@ -92,9 +92,9 @@ export default function AboutPage() {
                 </p>
               </AnimatedSection>
 
-              <AnimatedSection className="bg-white border border-[#E9EDF2] border-b-4 border-b-[#4F8A10] p-6 sm:p-8 rounded-[2rem] shadow-sm text-center group hover:shadow-md transition-shadow">
-                <div className="w-13 h-13 rounded-full bg-[#F1F8EA] flex items-center justify-center mx-auto mb-5 group-hover:bg-[#4F8A10] transition-colors duration-300">
-                  <ShieldCheck className="w-7 h-7 text-[#4F8A10] group-hover:text-white transition-colors duration-300" strokeWidth={1.75} />
+              <AnimatedSection className="bg-white border border-[#E9EDF2] border-b-4 border-b-[#E67710] p-6 sm:p-8 rounded-[2rem] shadow-sm text-center group hover:shadow-md transition-shadow">
+                <div className="w-13 h-13 rounded-full bg-[#FFF7ED] border border-[#FED7AA] flex items-center justify-center mx-auto mb-5 group-hover:bg-[#E67710] transition-colors duration-300">
+                  <ShieldCheck className="w-7 h-7 text-[#E67710] group-hover:text-white transition-colors duration-300" strokeWidth={1.75} />
                 </div>
                 <h3 className="font-heading font-bold text-xl text-[#102448] mb-3">Trust</h3>
                 <p className="text-[#64748B] text-xs sm:text-sm md:text-base leading-relaxed">
@@ -102,9 +102,9 @@ export default function AboutPage() {
                 </p>
               </AnimatedSection>
 
-              <AnimatedSection className="bg-white border border-[#E9EDF2] border-b-4 border-b-[#4F8A10] p-6 sm:p-8 rounded-[2rem] shadow-sm text-center group hover:shadow-md transition-shadow">
-                <div className="w-16 h-16 rounded-full bg-[#F1F8EA] flex items-center justify-center mx-auto mb-5 group-hover:bg-[#4F8A10] transition-colors duration-300">
-                  <TrendingUp className="w-7 h-7 text-[#4F8A10] group-hover:text-white transition-colors duration-300" strokeWidth={1.75} />
+              <AnimatedSection className="bg-white border border-[#E9EDF2] border-b-4 border-b-[#E67710] p-6 sm:p-8 rounded-[2rem] shadow-sm text-center group hover:shadow-md transition-shadow">
+                <div className="w-16 h-16 rounded-full bg-[#FFF7ED] border border-[#FED7AA] flex items-center justify-center mx-auto mb-5 group-hover:bg-[#E67710] transition-colors duration-300">
+                  <TrendingUp className="w-7 h-7 text-[#E67710] group-hover:text-white transition-colors duration-300" strokeWidth={1.75} />
                 </div>
                 <h3 className="font-heading font-bold text-xl text-[#102448] mb-3">Growth</h3>
                 <p className="text-[#64748B] text-xs sm:text-sm md:text-base leading-relaxed">

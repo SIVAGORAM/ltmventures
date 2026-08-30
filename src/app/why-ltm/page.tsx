@@ -53,7 +53,7 @@ export default function WhyLtmPage() {
           <div className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-8 text-center">
             <AnimatedSection className="max-w-4xl mx-auto">
               <h1 className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#102448] mb-3 sm:mb-4 leading-tight">
-                Why LTM Ventures<span className="text-[#4F8A10]">?</span>
+                Why LTM Ventures<span className="text-[#E67710]">?</span>
               </h1>
               <p className="text-xs sm:text-sm md:text-base text-[#64748B] leading-relaxed max-w-2xl mx-auto">
                 Because meaningful financial experiences require more than technology. They require understanding, trust, innovation, and a long-term commitment to people.
@@ -69,11 +69,11 @@ export default function WhyLtmPage() {
               {reasons.map((reason, index) => (
                 <AnimatedSection 
                   key={index} 
-                  className="bg-white p-6 sm:p-8 rounded-[2rem] shadow-sm border border-[#E9EDF2] border-b-4 border-b-[#4F8A10] hover:shadow-md transition-shadow group flex flex-col justify-between"
+                  className="bg-white p-6 sm:p-8 rounded-[2rem] shadow-sm border border-[#E9EDF2] border-b-4 border-b-[#E67710] hover:shadow-md transition-shadow group flex flex-col justify-between"
                 >
                   <div>
-                    <div className="w-13 h-13 rounded-full bg-[#F1F8EA] flex items-center justify-center mb-5 border border-[#E4F0D9] group-hover:bg-[#4F8A10] transition-colors duration-300">
-                      <reason.icon className="w-6 h-6 text-[#4F8A10] group-hover:text-white transition-colors duration-300" strokeWidth={1.75} />
+                    <div className="w-13 h-13 rounded-full bg-[#FFF7ED] flex items-center justify-center mb-5 border border-[#FED7AA] group-hover:bg-[#E67710] transition-colors duration-300">
+                      <reason.icon className="w-6 h-6 text-[#E67710] group-hover:text-white transition-colors duration-300" strokeWidth={1.75} />
                     </div>
                     <h3 className="font-heading font-bold text-lg sm:text-xl text-[#102448] mb-3">
                       {reason.title}

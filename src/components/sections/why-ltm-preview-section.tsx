@@ -41,9 +41,9 @@ export function WhyLtmPreviewSection() {
       {/* Top Right Concentric Arcs */}
       <div className="absolute top-0 right-0 w-[280px] h-[280px] pointer-events-none opacity-20 hidden md:block">
         <svg viewBox="0 0 300 300" fill="none" className="w-full h-full">
-          <circle cx="300" cy="0" r="280" stroke="#4F8A10" strokeWidth="1.5" strokeDasharray="6 6" />
-          <circle cx="300" cy="0" r="200" stroke="#4F8A10" strokeWidth="1.5" />
-          <circle cx="300" cy="0" r="120" stroke="#4F8A10" strokeWidth="1.5" strokeDasharray="4 4" />
+          <circle cx="300" cy="0" r="280" stroke="#E67710" strokeWidth="1.5" strokeDasharray="6 6" />
+          <circle cx="300" cy="0" r="200" stroke="#E67710" strokeWidth="1.5" />
+          <circle cx="300" cy="0" r="120" stroke="#E67710" strokeWidth="1.5" strokeDasharray="4 4" />
         </svg>
       </div>
 
@@ -52,16 +52,16 @@ export function WhyLtmPreviewSection() {
         {/* ── Section Header ── */}
         <AnimatedSection className="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
           <div className="flex items-center justify-center gap-3 mb-2 sm:mb-2.5">
-            <div className="h-[2px] w-8 sm:w-10 bg-[#4F8A10]"></div>
-            <span className="text-[11px] sm:text-[12px] md:text-[13px] font-bold uppercase tracking-widest text-[#4F8A10]">
+            <div className="h-[2px] w-8 sm:w-10 bg-[#E67710]"></div>
+            <span className="text-[11px] sm:text-[12px] md:text-[13px] font-bold uppercase tracking-widest text-[#E67710]">
               OUR VALUES
             </span>
-            <div className="h-[2px] w-8 sm:w-10 bg-[#4F8A10]"></div>
+            <div className="h-[2px] w-8 sm:w-10 bg-[#E67710]"></div>
           </div>
 
           <h2 className="font-heading font-bold text-[32px] sm:text-[42px] md:text-[48px] leading-[1.08] text-[#102448]">
             Built Around<br />
-            Meaningful Experiences<span className="text-[#4F8A10]">.</span>
+            Meaningful Experiences<span className="text-[#E67710]">.</span>
           </h2>
         </AnimatedSection>
 
@@ -72,23 +72,23 @@ export function WhyLtmPreviewSection() {
             return (
               <AnimatedSection
                 key={index}
-                className="bg-white border border-[#E9EDF2] border-b-4 border-b-[#4F8A10] rounded-[2rem] p-6 sm:p-7 md:p-8 
+                className="bg-white border border-[#E9EDF2] border-b-4 border-b-[#E67710] rounded-[2rem] p-6 sm:p-7 md:p-8 
                            shadow-md hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 relative overflow-hidden group flex flex-col justify-between"
               >
                 {/* Decorative background shape inside card */}
-                <div className="absolute -top-6 -right-6 w-28 h-28 rounded-full bg-[#F1F8EA]/60 pointer-events-none group-hover:scale-125 transition-transform duration-500" />
+                <div className="absolute -top-6 -right-6 w-28 h-28 rounded-full bg-[#FFF7ED]/80 pointer-events-none group-hover:scale-125 transition-transform duration-500" />
                 <div className="absolute top-6 right-6 opacity-25 pointer-events-none">
                   <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
                     {Array.from({ length: 9 }, (_, i) => (
-                      <circle key={i} cx={6 + (i % 3) * 12} cy={6 + Math.floor(i / 3) * 12} r="1.5" fill="#4F8A10" />
+                      <circle key={i} cx={6 + (i % 3) * 12} cy={6 + Math.floor(i / 3) * 12} r="1.5" fill="#E67710" />
                     ))}
                   </svg>
                 </div>
 
                 <div>
                   {/* Icon Badge */}
-                  <div className="w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-[#F1F8EA] flex items-center justify-center mb-5 sm:mb-6 shadow-sm border border-[#E4F0D9] group-hover:bg-[#4F8A10] transition-colors duration-300">
-                    <Icon className="w-6 h-6 text-[#4F8A10] group-hover:text-white transition-colors duration-300" strokeWidth={1.75} />
+                  <div className="w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-[#FFF7ED] flex items-center justify-center mb-5 sm:mb-6 shadow-sm border border-[#FED7AA] group-hover:bg-[#E67710] transition-colors duration-300">
+                    <Icon className="w-6 h-6 text-[#E67710] group-hover:text-white transition-colors duration-300" strokeWidth={1.75} />
                   </div>
 
                   {/* Title */}

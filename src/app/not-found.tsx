@@ -8,7 +8,7 @@ export default function NotFound() {
     <>
       <Header />
       <main className="flex-1 flex flex-col items-center justify-center min-h-[70vh] bg-white text-center px-4 pt-28 pb-16 select-none">
-        <div className="w-16 h-16 rounded-full bg-[#F1F8EA] border border-[#E4F0D9] flex items-center justify-center mb-6 text-[#4F8A10] font-heading font-bold text-2xl">
+        <div className="w-16 h-16 rounded-full bg-[#FFF7ED] border border-[#FED7AA] flex items-center justify-center mb-6 text-[#E67710] font-heading font-bold text-2xl">
           404
         </div>
         <h1 className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl text-[#102448] mb-4">
@@ -19,7 +19,7 @@ export default function NotFound() {
         </p>
         <Link 
           href="/" 
-          className="inline-flex items-center gap-2 bg-[#4F8A10] hover:bg-[#43770D] text-white font-semibold text-xs sm:text-sm rounded-xl px-6 py-3 shadow-md transition-all"
+          className="inline-flex items-center gap-2 bg-[#E67710] hover:bg-[#D96B00] text-white font-semibold text-xs sm:text-sm rounded-xl px-6 py-3 shadow-md transition-all"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>Back to Homepage</span>

@@ -65,14 +65,14 @@ export default function CareersPage() {
           <div className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-8 text-center">
             <AnimatedSection className="max-w-4xl mx-auto flex flex-col items-center">
               <h1 className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#102448] mb-4 sm:mb-6 leading-tight">
-                Build Something<br />Meaningful With Us<span className="text-[#4F8A10]">.</span>
+                Build Something<br />Meaningful With Us<span className="text-[#E67710]">.</span>
               </h1>
               <p className="text-xs sm:text-sm md:text-base text-[#64748B] leading-relaxed max-w-2xl mx-auto mb-6 sm:mb-8">
                 Join LTM Ventures India LLP and be part of a team focused on innovation, technology, and creating better financial experiences.
               </p>
               <Link 
                 href="#open-positions" 
-                className="bg-[#4F8A10] hover:bg-[#43770D] text-white font-semibold text-xs sm:text-sm rounded-xl px-8 py-3.5 shadow-md shadow-[#4F8A10]/20 transition-all inline-flex items-center gap-2"
+                className="bg-[#E67710] hover:bg-[#D96B00] text-white font-semibold text-xs sm:text-sm rounded-xl px-8 py-3.5 shadow-md shadow-[#E67710]/20 transition-all inline-flex items-center gap-2"
               >
                 <span>View Open Positions</span>
                 <ArrowRight className="w-4 h-4" />
@@ -92,10 +92,10 @@ export default function CareersPage() {
               {perks.map((perk, index) => (
                 <AnimatedSection 
                   key={index} 
-                  className="bg-white p-6 sm:p-8 rounded-[2rem] shadow-sm border border-[#E9EDF2] border-b-4 border-b-[#4F8A10] text-center"
+                  className="bg-white p-6 sm:p-8 rounded-[2rem] shadow-sm border border-[#E9EDF2] border-b-4 border-b-[#E67710] text-center"
                 >
-                  <div className="w-13 h-13 rounded-full bg-[#F1F8EA] flex items-center justify-center mx-auto mb-5 border border-[#E4F0D9]">
-                    <perk.icon className="w-6 h-6 text-[#4F8A10]" strokeWidth={1.75} />
+                  <div className="w-13 h-13 rounded-full bg-[#FFF7ED] flex items-center justify-center mx-auto mb-5 border border-[#FED7AA]">
+                    <perk.icon className="w-6 h-6 text-[#E67710]" strokeWidth={1.75} />
                   </div>
                   <h3 className="font-heading font-bold text-lg sm:text-xl text-[#102448] mb-2">
                     {perk.title}
@@ -121,21 +121,21 @@ export default function CareersPage() {
               {jobs.map((job, index) => (
                 <AnimatedSection 
                   key={index} 
-                  className="bg-white border border-[#E9EDF2] rounded-2xl p-5 sm:p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-4 sm:gap-6 hover:border-[#4F8A10]/40 hover:shadow-md transition-all group"
+                  className="bg-white border border-[#E9EDF2] rounded-2xl p-5 sm:p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-4 sm:gap-6 hover:border-[#E67710]/40 hover:shadow-md transition-all group"
                 >
                   <div>
-                    <h3 className="font-heading font-bold text-lg sm:text-xl md:text-2xl text-[#102448] mb-3 group-hover:text-[#4F8A10] transition-colors">
+                    <h3 className="font-heading font-bold text-lg sm:text-xl md:text-2xl text-[#102448] mb-3 group-hover:text-[#E67710] transition-colors">
                       {job.title}
                     </h3>
                     <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-xs sm:text-sm text-[#64748B]">
                       <div className="flex items-center gap-1.5">
-                        <Briefcase className="w-4 h-4 text-[#4F8A10]" /> {job.department}
+                        <Briefcase className="w-4 h-4 text-[#E67710]" /> {job.department}
                       </div>
                       <div className="flex items-center gap-1.5">
-                        <MapPin className="w-4 h-4 text-[#4F8A10]" /> {job.location}
+                        <MapPin className="w-4 h-4 text-[#E67710]" /> {job.location}
                       </div>
                       <div className="flex items-center gap-1.5">
-                        <Clock className="w-4 h-4 text-[#4F8A10]" /> {job.type}
+                        <Clock className="w-4 h-4 text-[#E67710]" /> {job.type}
                       </div>
                     </div>
                   </div>
@@ -143,7 +143,7 @@ export default function CareersPage() {
                     href="https://www.wealthystep.com/" 
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 bg-[#F1F8EA] hover:bg-[#4F8A10] text-[#4F8A10] hover:text-white border border-[#D4E8C4] font-semibold text-xs sm:text-sm px-6 py-2.5 rounded-xl transition-all self-start md:self-auto shadow-sm"
+                    className="inline-flex items-center justify-center gap-2 bg-[#FFF7ED] hover:bg-[#E67710] text-[#E67710] hover:text-white border border-[#FED7AA] font-semibold text-xs sm:text-sm px-6 py-2.5 rounded-xl transition-all self-start md:self-auto shadow-sm"
                   >
                     <span>Apply Now</span>
                     <ArrowRight className="w-4 h-4" />

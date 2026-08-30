@@ -26,16 +26,16 @@ export default function VisionMissionPage() {
                 
                 {/* 1. OUR VISION */}
                 <div className="flex items-start gap-3.5 sm:gap-5">
-                  <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[#F1F8EA] flex items-center justify-center shrink-0 border border-[#E4F0D9] shadow-sm">
-                    <Eye className="w-5 h-5 sm:w-7 sm:h-7 text-[#4F8A10]" strokeWidth={1.75} />
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[#FFF7ED] flex items-center justify-center shrink-0 border border-[#FED7AA] shadow-sm">
+                    <Eye className="w-5 h-5 sm:w-7 sm:h-7 text-[#E67710]" strokeWidth={1.75} />
                   </div>
 
                   <div className="flex flex-col gap-1.5 sm:gap-2">
                     <div className="flex items-center gap-2.5">
-                      <span className="text-[11px] sm:text-[12px] font-bold uppercase tracking-widest text-[#4F8A10]">
+                      <span className="text-[11px] sm:text-[12px] font-bold uppercase tracking-widest text-[#E67710]">
                         OUR VISION
                       </span>
-                      <div className="h-[2px] w-8 bg-[#4F8A10]"></div>
+                      <div className="h-[2px] w-8 bg-[#E67710]"></div>
                     </div>
 
                     <h1 className="font-heading font-bold text-base sm:text-xl md:text-[22px] leading-snug text-[#102448]">
@@ -56,16 +56,16 @@ export default function VisionMissionPage() {
 
                 {/* 2. OUR MISSION */}
                 <div className="flex items-start gap-3.5 sm:gap-5">
-                  <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[#F1F8EA] flex items-center justify-center shrink-0 border border-[#E4F0D9] shadow-sm">
-                    <Target className="w-5 h-5 sm:w-7 sm:h-7 text-[#4F8A10]" strokeWidth={1.75} />
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[#FFF7ED] flex items-center justify-center shrink-0 border border-[#FED7AA] shadow-sm">
+                    <Target className="w-5 h-5 sm:w-7 sm:h-7 text-[#E67710]" strokeWidth={1.75} />
                   </div>
 
                   <div className="flex flex-col gap-1.5 sm:gap-2">
                     <div className="flex items-center gap-2.5">
-                      <span className="text-[11px] sm:text-[12px] font-bold uppercase tracking-widest text-[#4F8A10]">
+                      <span className="text-[11px] sm:text-[12px] font-bold uppercase tracking-widest text-[#E67710]">
                         OUR MISSION
                       </span>
-                      <div className="h-[2px] w-8 bg-[#4F8A10]"></div>
+                      <div className="h-[2px] w-8 bg-[#E67710]"></div>
                     </div>
 
                     <h2 className="font-heading font-bold text-base sm:text-xl md:text-[22px] leading-snug text-[#102448]">

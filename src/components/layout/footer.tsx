@@ -16,9 +16,9 @@ export function Footer() {
       {/* ── Background Decorative Wavy Lines (Bottom Left) ── */}
       <div className="absolute bottom-0 left-0 w-[450px] h-[350px] pointer-events-none opacity-20 hidden md:block">
         <svg viewBox="0 0 450 350" fill="none" className="w-full h-full">
-          <path d="M-50 350C100 280 200 150 450 100" stroke="#4F8A10" strokeWidth="1.5" strokeDasharray="4 4" />
-          <path d="M-50 300C120 230 220 120 400 50" stroke="#4F8A10" strokeWidth="1.5" />
-          <path d="M-50 250C140 180 240 90 350 0" stroke="#4F8A10" strokeWidth="1.5" />
+          <path d="M-50 350C100 280 200 150 450 100" stroke="#E67710" strokeWidth="1.5" strokeDasharray="4 4" />
+          <path d="M-50 300C120 230 220 120 400 50" stroke="#E67710" strokeWidth="1.5" />
+          <path d="M-50 250C140 180 240 90 350 0" stroke="#E67710" strokeWidth="1.5" />
         </svg>
       </div>
 
@@ -31,15 +31,15 @@ export function Footer() {
           <div className="absolute top-4 right-4 opacity-20 pointer-events-none hidden sm:block">
             <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
               {Array.from({ length: 16 }, (_, i) => (
-                <circle key={i} cx={8 + (i % 4) * 14} cy={8 + Math.floor(i / 4) * 14} r="1.5" fill="#4F8A10" />
+                <circle key={i} cx={8 + (i % 4) * 14} cy={8 + Math.floor(i / 4) * 14} r="1.5" fill="#E67710" />
               ))}
             </svg>
           </div>
 
           {/* Left Block: Icon & Headline */}
           <div className="flex items-center gap-4 sm:gap-6 w-full lg:w-auto">
-            <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full bg-[#08172F] border border-[#4F8A10] flex items-center justify-center shrink-0 shadow-[0_0_20px_rgba(79,138,16,0.3)]">
-              <TrendingUp className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-[#4F8A10]" strokeWidth={1.75} />
+            <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full bg-[#08172F] border border-[#E67710] flex items-center justify-center shrink-0 shadow-[0_0_20px_rgba(230,119,16,0.3)]">
+              <TrendingUp className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-[#E67710]" strokeWidth={1.75} />
             </div>
 
             <div className="flex flex-col">
@@ -58,7 +58,7 @@ export function Footer() {
               href="https://www.wealthystep.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gradient-to-r from-[#4F8A10] to-[#3B6A0C] hover:from-[#43770D] hover:to-[#325A0A] text-white font-semibold text-xs sm:text-sm px-6 sm:px-7 py-3 sm:py-3.5 rounded-full transition-all duration-300 flex items-center justify-center gap-2.5 shadow-lg shadow-[#4F8A10]/25 group cursor-pointer w-full sm:w-auto"
+              className="bg-gradient-to-r from-[#E67710] to-[#C25E00] hover:from-[#D96B00] hover:to-[#A85100] text-white font-semibold text-xs sm:text-sm px-6 sm:px-7 py-3 sm:py-3.5 rounded-full transition-all duration-300 flex items-center justify-center gap-2.5 shadow-lg shadow-[#E67710]/25 group cursor-pointer w-full sm:w-auto"
             >
               <span>Explore WealthyStep Platform</span>
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -92,7 +92,7 @@ export function Footer() {
               Building meaningful financial experiences through innovation, technology, and customer-focused thinking.
             </p>
 
-            <div className="h-[2px] w-10 bg-[#4F8A10] mb-4 sm:mb-5"></div>
+            <div className="h-[2px] w-10 bg-[#E67710] mb-4 sm:mb-5"></div>
 
             <span className="text-xs sm:text-sm font-bold text-white mb-2.5 sm:mb-3 block">
               Follow Us
@@ -104,7 +104,7 @@ export function Footer() {
                 target="_blank" 
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-[#1C3B6C] bg-[#0A1B36] flex items-center justify-center text-slate-300 hover:text-white hover:border-[#4F8A10] hover:bg-[#4F8A10]/15 transition-all duration-300"
+                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-[#1C3B6C] bg-[#0A1B36] flex items-center justify-center text-slate-300 hover:text-white hover:border-[#E67710] hover:bg-[#E67710]/15 transition-all duration-300"
               >
                 <svg className="w-4 h-4 fill-currentColor" viewBox="0 0 24 24">
                   <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
@@ -115,7 +115,7 @@ export function Footer() {
                 target="_blank" 
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-[#1C3B6C] bg-[#0A1B36] flex items-center justify-center text-slate-300 hover:text-white hover:border-[#4F8A10] hover:bg-[#4F8A10]/15 transition-all duration-300"
+                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-[#1C3B6C] bg-[#0A1B36] flex items-center justify-center text-slate-300 hover:text-white hover:border-[#E67710] hover:bg-[#E67710]/15 transition-all duration-300"
               >
                 <svg className="w-4 h-4 fill-currentColor" viewBox="0 0 24 24">
                   <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
@@ -130,7 +130,7 @@ export function Footer() {
               Navigation
             </h4>
 
-            <div className="h-[2px] w-8 bg-[#4F8A10] mb-4 sm:mb-5"></div>
+            <div className="h-[2px] w-8 bg-[#E67710] mb-4 sm:mb-5"></div>
 
             <ul className="grid grid-cols-1 gap-2 sm:gap-2.5 w-full">
               {navLinks.map((item) => (
@@ -139,7 +139,7 @@ export function Footer() {
                     href={item.href}
                     className="inline-flex items-center gap-2 text-[#94A3B8] hover:text-white text-xs sm:text-sm transition-colors group"
                   >
-                    <ChevronRight className="w-3.5 h-3.5 text-[#4F8A10] group-hover:translate-x-0.5 transition-transform" />
+                    <ChevronRight className="w-3.5 h-3.5 text-[#E67710] group-hover:translate-x-0.5 transition-transform" />
                     <span>{item.name}</span>
                   </Link>
                 </li>
@@ -153,7 +153,7 @@ export function Footer() {
               Our Brands
             </h4>
 
-            <div className="h-[2px] w-8 bg-[#4F8A10] mb-4 sm:mb-5"></div>
+            <div className="h-[2px] w-8 bg-[#E67710] mb-4 sm:mb-5"></div>
 
             {/* Official WealthyStep Logo in White Badge linking directly to https://www.wealthystep.com/ */}
             <a 

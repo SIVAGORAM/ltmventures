@@ -22,14 +22,14 @@ export default function BrandPage() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-center">
               <AnimatedSection className="lg:col-span-5 flex flex-col items-start gap-4 py-2 sm:py-4">
                 <div className="flex items-center gap-2.5 sm:gap-3">
-                  <span className="text-[11px] sm:text-[12px] md:text-[13px] font-bold uppercase tracking-widest text-[#4F8A10]">
+                  <span className="text-[11px] sm:text-[12px] md:text-[13px] font-bold uppercase tracking-widest text-[#E67710]">
                     OUR BRAND
                   </span>
-                  <div className="h-[2px] w-8 sm:w-10 bg-[#4F8A10]"></div>
+                  <div className="h-[2px] w-8 sm:w-10 bg-[#E67710]"></div>
                 </div>
 
                 <h1 className="font-heading font-bold text-[36px] sm:text-[44px] md:text-[50px] lg:text-[54px] leading-tight text-[#102448]">
-                  Meet WealthyStep<span className="text-[#4F8A10]">.</span>
+                  Meet WealthyStep<span className="text-[#E67710]">.</span>
                 </h1>
 
                 <p className="text-xs sm:text-sm md:text-base text-[#64748B] leading-relaxed max-w-lg">
@@ -40,7 +40,7 @@ export default function BrandPage() {
                   href="https://www.wealthystep.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-white bg-gradient-to-r from-[#4F8A10] to-[#3B6A0C] hover:from-[#43770D] hover:to-[#31570A] font-semibold text-xs sm:text-sm px-6 py-3 rounded-xl transition-all shadow-md shadow-[#4F8A10]/20 group mt-1"
+                  className="inline-flex items-center gap-2 text-white bg-gradient-to-r from-[#E67710] to-[#C25E00] hover:from-[#D96B00] hover:to-[#A85100] font-semibold text-xs sm:text-sm px-6 py-3 rounded-xl transition-all shadow-md shadow-[#E67710]/20 group mt-1"
                 >
                   <span>Visit WealthyStep Website</span>
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -48,7 +48,7 @@ export default function BrandPage() {
               </AnimatedSection>
               
               <AnimatedSection className="lg:col-span-7 relative w-full h-[220px] xs:h-[280px] sm:h-[340px] md:h-[400px] lg:h-[440px]">
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[85%] h-[85%] rounded-full bg-gradient-to-tr from-[#4F8A10]/10 via-[#102448]/5 to-transparent blur-3xl pointer-events-none" />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[85%] h-[85%] rounded-full bg-gradient-to-tr from-[#E67710]/10 via-[#102448]/5 to-transparent blur-3xl pointer-events-none" />
                 <Image 
                   src="/hero_3d_chart.png"
                   alt="WealthyStep Financial Growth"
@@ -82,7 +82,7 @@ export default function BrandPage() {
               </a>
 
               <h2 className="font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-white mb-3 sm:mb-4">
-                Plan Your Financial Journey With Confidence<span className="text-[#4F8A10]">.</span>
+                Plan Your Financial Journey With Confidence<span className="text-[#E67710]">.</span>
               </h2>
 
               <p className="text-white/80 text-xs sm:text-sm md:text-base leading-relaxed max-w-2xl">
@@ -101,9 +101,9 @@ export default function BrandPage() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
               
-              <AnimatedSection className="bg-white p-6 sm:p-8 rounded-[2rem] shadow-sm border border-[#E9EDF2] border-b-4 border-b-[#4F8A10] flex items-start gap-5 hover:shadow-md transition-shadow">
-                <div className="w-13 h-13 rounded-full bg-[#F1F8EA] flex items-center justify-center shrink-0 border border-[#E4F0D9]">
-                  <LineChart className="w-6 h-6 text-[#4F8A10]" strokeWidth={1.75} />
+              <AnimatedSection className="bg-white p-6 sm:p-8 rounded-[2rem] shadow-sm border border-[#E9EDF2] border-b-4 border-b-[#E67710] flex items-start gap-5 hover:shadow-md transition-shadow">
+                <div className="w-13 h-13 rounded-full bg-[#FFF7ED] flex items-center justify-center shrink-0 border border-[#FED7AA]">
+                  <LineChart className="w-6 h-6 text-[#E67710]" strokeWidth={1.75} />
                 </div>
                 <div>
                   <h3 className="font-heading font-bold text-lg sm:text-xl text-[#102448] mb-2">Financial Planning</h3>
@@ -113,9 +113,9 @@ export default function BrandPage() {
                 </div>
               </AnimatedSection>
 
-              <AnimatedSection className="bg-white p-6 sm:p-8 rounded-[2rem] shadow-sm border border-[#E9EDF2] border-b-4 border-b-[#4F8A10] flex items-start gap-5 hover:shadow-md transition-shadow">
-                <div className="w-13 h-13 rounded-full bg-[#F1F8EA] flex items-center justify-center shrink-0 border border-[#E4F0D9]">
-                  <Compass className="w-6 h-6 text-[#4F8A10]" strokeWidth={1.75} />
+              <AnimatedSection className="bg-white p-6 sm:p-8 rounded-[2rem] shadow-sm border border-[#E9EDF2] border-b-4 border-b-[#E67710] flex items-start gap-5 hover:shadow-md transition-shadow">
+                <div className="w-13 h-13 rounded-full bg-[#FFF7ED] flex items-center justify-center shrink-0 border border-[#FED7AA]">
+                  <Compass className="w-6 h-6 text-[#E67710]" strokeWidth={1.75} />
                 </div>
                 <div>
                   <h3 className="font-heading font-bold text-lg sm:text-xl text-[#102448] mb-2">Investment Guidance</h3>
@@ -125,9 +125,9 @@ export default function BrandPage() {
                 </div>
               </AnimatedSection>
 
-              <AnimatedSection className="bg-white p-6 sm:p-8 rounded-[2rem] shadow-sm border border-[#E9EDF2] border-b-4 border-b-[#4F8A10] flex items-start gap-5 hover:shadow-md transition-shadow">
-                <div className="w-13 h-13 rounded-full bg-[#F1F8EA] flex items-center justify-center shrink-0 border border-[#E4F0D9]">
-                  <Target className="w-6 h-6 text-[#4F8A10]" strokeWidth={1.75} />
+              <AnimatedSection className="bg-white p-6 sm:p-8 rounded-[2rem] shadow-sm border border-[#E9EDF2] border-b-4 border-b-[#E67710] flex items-start gap-5 hover:shadow-md transition-shadow">
+                <div className="w-13 h-13 rounded-full bg-[#FFF7ED] flex items-center justify-center shrink-0 border border-[#FED7AA]">
+                  <Target className="w-6 h-6 text-[#E67710]" strokeWidth={1.75} />
                 </div>
                 <div>
                   <h3 className="font-heading font-bold text-lg sm:text-xl text-[#102448] mb-2">Goal-Based Planning</h3>
@@ -137,9 +137,9 @@ export default function BrandPage() {
                 </div>
               </AnimatedSection>
 
-              <AnimatedSection className="bg-white p-6 sm:p-8 rounded-[2rem] shadow-sm border border-[#E9EDF2] border-b-4 border-b-[#4F8A10] flex items-start gap-5 hover:shadow-md transition-shadow">
-                <div className="w-13 h-13 rounded-full bg-[#F1F8EA] flex items-center justify-center shrink-0 border border-[#E4F0D9]">
-                  <Briefcase className="w-6 h-6 text-[#4F8A10]" strokeWidth={1.75} />
+              <AnimatedSection className="bg-white p-6 sm:p-8 rounded-[2rem] shadow-sm border border-[#E9EDF2] border-b-4 border-b-[#E67710] flex items-start gap-5 hover:shadow-md transition-shadow">
+                <div className="w-13 h-13 rounded-full bg-[#FFF7ED] flex items-center justify-center shrink-0 border border-[#FED7AA]">
+                  <Briefcase className="w-6 h-6 text-[#E67710]" strokeWidth={1.75} />
                 </div>
                 <div>
                   <h3 className="font-heading font-bold text-lg sm:text-xl text-[#102448] mb-2">Wealth Management</h3>

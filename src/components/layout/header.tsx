@@ -61,7 +61,7 @@ export function Header() {
                   href={item.href}
                   className={cn(
                     "text-[13px] xl:text-[14px] font-semibold transition-colors relative py-1 flex flex-col items-center group whitespace-nowrap",
-                    isActive ? "text-[#4F8A10]" : "text-[#102448] hover:text-[#4F8A10]"
+                    isActive ? "text-[#E67710]" : "text-[#102448] hover:text-[#E67710]"
                   )}
                 >
                   <div className="flex items-center gap-1">
@@ -71,7 +71,7 @@ export function Header() {
                     )}
                   </div>
                   {isActive && (
-                    <span className="w-5 h-[3px] bg-[#4F8A10] rounded-full mt-1" />
+                    <span className="w-5 h-[3px] bg-[#E67710] rounded-full mt-1" />
                   )}
                 </Link>
               )
@@ -84,7 +84,7 @@ export function Header() {
               href="https://www.wealthystep.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#F1F8EA] hover:bg-[#E4F0D9] border border-[#D4E8C4] rounded-xl px-4 py-2 transition-all duration-300 group shadow-sm"
+              className="inline-flex items-center gap-2 bg-[#FFF7ED] hover:bg-[#FFEDD5] border border-[#FED7AA] rounded-xl px-4 py-2 transition-all duration-300 group shadow-sm"
               title="Visit WealthyStep official website"
             >
               <img 
@@ -92,7 +92,7 @@ export function Header() {
                 alt="WealthyStep" 
                 className="h-5 w-auto object-contain" 
               />
-              <ArrowRight className="w-3.5 h-3.5 text-[#4F8A10] transition-transform group-hover:translate-x-1" />
+              <ArrowRight className="w-3.5 h-3.5 text-[#E67710] transition-transform group-hover:translate-x-1" />
             </a>
           </div>
 
