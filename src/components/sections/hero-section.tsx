@@ -2,7 +2,7 @@ import { Users, ArrowRight, ExternalLink, TrendingUp, ShieldCheck, ArrowUpRight,
 
 export function HeroSection() {
   return (
-    <section id="hero" className="relative w-full bg-white pt-24 xs:pt-26 sm:pt-22 pb-4 sm:pb-6 overflow-hidden select-none border-b border-[#E9EDF2]">
+    <section id="hero" className="relative w-full bg-white min-h-[90vh] lg:min-h-screen flex items-center pt-28 pb-16 lg:pt-32 lg:pb-24 overflow-hidden select-none border-b border-[#E9EDF2]">
       
       {/* ── Background Soft Radial Glows ── */}
       <div className="absolute top-0 right-0 w-[550px] h-[550px] bg-gradient-to-bl from-[#E67710]/8 via-transparent to-transparent rounded-full blur-3xl pointer-events-none" />
@@ -22,60 +22,60 @@ export function HeroSection() {
           </div>
           
           {/* Hero Headline */}
-          <h1 className="font-heading font-bold text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-[44px] xl:text-[48px] leading-[1.15] text-[#102448]">
+          <h1 className="font-heading font-bold text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-[52px] xl:text-[60px] leading-[1.15] text-[#102448]">
             Empowering Your Financial<br />
             <span className="text-[#102448] underline decoration-[#E67710] decoration-4 underline-offset-8">Future Today</span>.
           </h1>
           
           {/* Hero Subtitle */}
-          <p className="text-xs sm:text-sm md:text-base text-[#64748B] leading-relaxed max-w-[480px]">
-            Discover <strong className="text-[#102448]">WealthyStep</strong> for mindful financial solutions and insurance solutions.
+          <p className="text-sm sm:text-base md:text-lg text-[#64748B] leading-relaxed max-w-[520px]">
+            Discover <strong className="text-[#102448]">WealthyStep</strong> for mindful financial and insurance solutions.
           </p>
           
           {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row items-center gap-3 mt-1 w-full sm:w-auto">
+          <div className="flex flex-col sm:flex-row items-center gap-4 mt-3 w-full sm:w-auto">
             <a 
               href="#about" 
-              className="w-full sm:w-auto bg-[#102448] hover:bg-[#18315C] text-white rounded-xl px-6 py-2.5 text-xs sm:text-sm font-semibold inline-flex items-center justify-center gap-2 shadow-md transition-all group"
+              className="w-full sm:w-auto bg-[#102448] hover:bg-[#18315C] text-white rounded-xl px-8 py-3.5 text-sm sm:text-base font-semibold inline-flex items-center justify-center gap-2 shadow-md transition-all group"
             >
               <span>Learn About LTM Ventures</span>
-              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+              <ArrowRight className="w-4.5 h-4.5 transition-transform group-hover:translate-x-1" />
             </a>
 
             <a 
               href="https://www.wealthystep.com/" 
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto bg-white hover:bg-slate-50 text-[#102448] border border-[#CBD5E1] rounded-xl px-5 py-2.5 text-xs sm:text-sm font-semibold inline-flex items-center justify-center gap-2 transition-colors shadow-sm"
+              className="w-full sm:w-auto bg-white hover:bg-slate-50 text-[#102448] border border-[#CBD5E1] rounded-xl px-6 py-3.5 text-sm sm:text-base font-semibold inline-flex items-center justify-center gap-2 transition-colors shadow-sm"
             >
               <span>Explore WealthyStep</span>
-              <ExternalLink className="w-3.5 h-3.5 opacity-70" />
+              <ExternalLink className="w-4 h-4 opacity-70" />
             </a>
           </div>
 
           {/* Key Metric Highlights Bar - Mobile Responsive Grid without truncation */}
-          <div className="grid grid-cols-2 xs:grid-cols-3 gap-3 xs:gap-4 pt-3.5 mt-1 border-t border-slate-200/80 w-full max-w-[460px]">
+          <div className="grid grid-cols-2 xs:grid-cols-3 gap-4 pt-5 mt-4 border-t border-slate-200/80 w-full max-w-[500px]">
             <div>
-              <div className="text-sm xs:text-base sm:text-lg font-bold text-[#102448] font-heading whitespace-nowrap">Parent</div>
-              <div className="text-[10px] sm:text-[11px] text-[#64748B] font-medium whitespace-nowrap">Holding Entity</div>
+              <div className="text-base xs:text-lg sm:text-xl font-bold text-[#102448] font-heading whitespace-nowrap">Parent</div>
+              <div className="text-xs text-[#64748B] font-medium whitespace-nowrap">Holding Entity</div>
             </div>
             <div>
-              <div className="text-sm xs:text-base sm:text-lg font-bold text-[#E67710] font-heading whitespace-nowrap">WealthyStep</div>
-              <div className="text-[10px] sm:text-[11px] text-[#64748B] font-medium whitespace-nowrap">Flagship Brand</div>
+              <div className="text-base xs:text-lg sm:text-xl font-bold text-[#E67710] font-heading whitespace-nowrap">WealthyStep</div>
+              <div className="text-xs text-[#64748B] font-medium whitespace-nowrap">Flagship Brand</div>
             </div>
             <div className="col-span-2 xs:col-span-1">
-              <div className="text-sm xs:text-base sm:text-lg font-bold text-[#102448] font-heading whitespace-nowrap">100%</div>
-              <div className="text-[10px] sm:text-[11px] text-[#64748B] font-medium whitespace-nowrap">Mindful Focus</div>
+              <div className="text-base xs:text-lg sm:text-xl font-bold text-[#102448] font-heading whitespace-nowrap">100%</div>
+              <div className="text-xs text-[#64748B] font-medium whitespace-nowrap">Mindful Focus</div>
             </div>
           </div>
 
         </div>
         
         {/* ── Right Column: UNIQUE CUSTOM FINANCIAL GRAPHIC COMPOSITION (6 cols) ── */}
-        <div className="lg:col-span-6 relative w-full flex items-center justify-center py-1">
+        <div className="lg:col-span-6 relative w-full flex items-center justify-center py-8 lg:py-0">
           
           {/* Main Card Container */}
-          <div className="w-full max-w-[480px] bg-gradient-to-br from-white via-slate-50/90 to-[#FFF7ED]/50 rounded-3xl p-4 sm:p-5 shadow-xl border border-slate-200/90 relative overflow-hidden select-none">
+          <div className="w-full max-w-[540px] bg-gradient-to-br from-white via-slate-50/90 to-[#FFF7ED]/50 rounded-3xl p-5 sm:p-7 shadow-2xl border border-slate-200/90 relative overflow-hidden select-none">
             
             {/* Subtle Brand Accent Glow */}
             <div className="absolute top-0 right-0 w-36 h-36 bg-[#E67710]/10 rounded-full blur-2xl pointer-events-none" />
