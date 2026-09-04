@@ -38,7 +38,7 @@ export function AboutSection() {
                 <img src="/wealthysteplogo.svg" alt="WealthyStep" className="h-6 w-auto object-contain" />
                 <div className="flex flex-col text-left border-l border-slate-200 pl-3.5">
                   <span className="text-xs font-bold text-[#102448] group-hover:text-[#E67710] transition-colors">WealthyStep Official Website</span>
-                  <span className="text-[11px] text-[#64748B]">Financial Solutions & Wealth Management</span>
+                  <span className="text-[11px] text-[#64748B]">Financial Solutions & Goal Based Investments</span>
                 </div>
               </a>
             </div>
@@ -197,7 +197,7 @@ const services = [
   },
   {
     icon: Shield,
-    title: "Wealth Management Expertise",
+    title: "Goal Based Investments",
     description: "Empowering you to make mindful investment decisions for a prosperous financial future."
   },
   {

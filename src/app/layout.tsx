@@ -16,10 +16,10 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL("https://ltmventuresindia.com"),
   title: "LTM Ventures India LLP | Parent Company of WealthyStep",
-  description: "LTM Ventures India LLP is the parent company of WealthyStep, dedicated to providing innovative financial and wealth management solutions.",
+  description: "LTM Ventures India LLP is the parent company of WealthyStep, dedicated to providing innovative financial and goal based investment solutions.",
   openGraph: {
     title: "LTM Ventures India LLP | Parent Company of WealthyStep",
-    description: "LTM Ventures India LLP is the parent company of WealthyStep, dedicated to providing innovative financial and wealth management solutions.",
+    description: "LTM Ventures India LLP is the parent company of WealthyStep, dedicated to providing innovative financial and goal based investment solutions.",
     url: "https://ltmventuresindia.com",
     siteName: "LTM Ventures India LLP",
     locale: "en_IN",
